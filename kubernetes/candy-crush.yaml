@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name:  candy-crush
+  namespace: games
+  labels:
+    app:  candy-crush
+spec:
+  selector:
+    matchLabels:
+      app: candy-crush
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app:  candy-crush
+    spec:
+      containers:
+      - name:  candy-crush
+        image: sirlawdin/games:v1
+        resources:
+          requests:
+            cpu: 100m
+            memory: 100Mi
+          limits:
+            cpu: 100m
+            memory: 100Mi
+        ports:
+        - containerPort:  80
+          name:  candy-crush
+      restartPolicy: Always
