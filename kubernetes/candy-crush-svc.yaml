@@ -11,4 +11,4 @@ spec:
   - name: candy-crush
     protocol: TCP
     port: 8090
-    targetPort: 80
+    targetPort: 5900
