@@ -26,6 +26,6 @@ spec:
             cpu: 100m
             memory: 100Mi
         ports:
-        - containerPort:  80
+        - containerPort:  5900
           name:  candy-crush
       restartPolicy: Always
