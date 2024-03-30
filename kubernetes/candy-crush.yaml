@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name:  candy-crush
-        image: sirlawdin/selenium-grid:v1
+        image: sirlawdin/udagram-frontend:v7
         resources:
           requests:
             cpu: 100m
