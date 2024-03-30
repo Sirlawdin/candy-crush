@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name:  candy-crush
-        image: sirlawdin/udagram-frontend:v7
+        image: sirlawdin/jenkins:v1
         resources:
           requests:
             cpu: 100m
